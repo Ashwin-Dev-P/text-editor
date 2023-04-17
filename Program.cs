@@ -47,8 +47,12 @@ namespace TextEditor
 
             app.MapControllerRoute(
                 name: "default",
+                pattern: "{controller=TextFile}/{action=Index}/{id?}");
+            
+            app.MapControllerRoute(
+                name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-
+            
             app.Run();
         }
     }

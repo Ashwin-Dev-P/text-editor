@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using TextEditor.Areas.Identity.Data;
+using TextEditor.Models;
 
 namespace TextEditor.Data;
 
@@ -19,4 +20,6 @@ public class TextEditorContext : IdentityDbContext<TextEditorUser>
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);
     }
+
+    public DbSet<TextEditor.Models.TextFileModel>? TextFileModel { get; set; }
 }

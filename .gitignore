@@ -6,6 +6,9 @@
 # App settings ignored since it contains sensitive data and is good practise to ignore  
 appsettings.*
 
+# Sql query files   
+*.sql
+
 # User-specific files
 *.rsuser
 *.suo
